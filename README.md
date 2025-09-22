@@ -48,5 +48,6 @@ dotnet run -- "C:\Data\Source" "D:\Backups\Replica" "C:\Logs\sync.log" 60
 ---
 
 ##  Important notes
-- The source folder is not included in the repository, you must use a local test folder to use the program
-- To stop the program, press Ctrl + C
+- The source folder is not included in the repository, you must use a local test folder to use the program.
+- The log file can be either a full path to a file, or a folder path. In case of the latter, a default file name "sync.log" will be created.
+- To stop the program, press Ctrl + C.
