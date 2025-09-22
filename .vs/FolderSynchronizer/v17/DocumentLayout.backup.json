@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Random_codes\\FolderSynchronizer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CCBCC3F3-EC85-4FCD-ABA2-73D9C20929D9}|FolderSynchronizer\\FolderSynchronizer.csproj|d:\\random_codes\\foldersynchronizer\\foldersynchronizer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCBCC3F3-EC85-4FCD-ABA2-73D9C20929D9}|FolderSynchronizer\\FolderSynchronizer.csproj|solutionrelative:foldersynchronizer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 192,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Random_codes\\FolderSynchronizer\\FolderSynchronizer\\Program.cs",
+              "RelativeDocumentMoniker": "FolderSynchronizer\\Program.cs",
+              "ToolTip": "D:\\Random_codes\\FolderSynchronizer\\FolderSynchronizer\\Program.cs",
+              "RelativeToolTip": "FolderSynchronizer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T21:00:20.627Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
