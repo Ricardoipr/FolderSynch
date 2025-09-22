@@ -1,4 +1,4 @@
-﻿namespace FolderSynchronizer
+namespace FolderSynchronizer
 {
     /// <summary>
     /// Provides functionality to log messages and file operations
@@ -11,24 +11,33 @@
         /// <summary>
         /// Initializes a new instance of the FileLogger class.
         /// Ensures that the directory for the log file exists.
-        /// If it doesn't exist, it'll create the log file.
+        /// If the given path is a folder or missing a filename, 
+        /// a default "sync.log" file is created inside it.
         /// </summary>
-        /// <param name="logFilePath">The full path to the log file.</param>
+        /// <param name="logFilePath">The path to the log file or folder.</param>
         public FileLogger(string logFilePath)
         {
-            _logFilePath = logFilePath;
-
-            var logDir = Path.GetDirectoryName(_logFilePath);
-            if (!string.IsNullOrEmpty(logDir) && !Directory.Exists(logDir))
+            if (Directory.Exists(logFilePath) || string.IsNullOrWhiteSpace(Path.GetFileName(logFilePath)))
             {
-                Directory.CreateDirectory(logDir);
+                logFilePath = Path.Combine(logFilePath, "sync.log");
             }
+
+            var fullPath = Path.GetFullPath(logFilePath);
+            var dir = Path.GetDirectoryName(fullPath);
+
+            if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
+            {
+                Directory.CreateDirectory(dir);
+            }
+
+            _logFilePath = fullPath;
 
             if (!File.Exists(_logFilePath))
             {
                 File.Create(_logFilePath).Dispose();
             }
         }
+
         /// <summary>
         /// Logs a message with a timestamp to both console and the log file.
         /// </summary>
