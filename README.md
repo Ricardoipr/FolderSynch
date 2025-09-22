@@ -1,3 +1,7 @@
+![.NET](https://img.shields.io/badge/.NET-6.0-blue)
+![C#](https://img.shields.io/badge/language-C%23-green)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
+
 # Folder Synchronizer
 
 A C#application that synchronizes two folders, a **replica folder** with a **source folder**.  
